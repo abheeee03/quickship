@@ -1,0 +1,16 @@
+{
+  "name": "build-server",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.980.0",
+    "dotenv": "^17.2.3",
+    "mime-types": "^3.0.2"
+  }
+}
