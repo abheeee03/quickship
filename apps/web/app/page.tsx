@@ -1,9 +1,9 @@
-import React from 'react'
+import Image from "next/image";
 
-function App() {
+export default function Home() {
   return (
-    <div>App</div>
-  )
+    <div className="h-screen w-full flex items-center justify-start py-10 px-10">
+      Home
+    </div>
+  );
 }
-
-export default App
