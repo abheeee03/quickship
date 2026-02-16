@@ -7,9 +7,10 @@ datasource db {
 }
 
 model User {
-  id        String   @id
+  id        String     @id
   email     String
-  createdAt DateTime @default(now())
+  createdAt DateTime   @default(now())
+  projects  Projects[]
 }
 
 model Projects {
@@ -19,6 +20,8 @@ model Projects {
   gitUrl    String
   createdAt DateTime @default(now())
   logs      Logs[]
+  userID    String
+  user      User     @relation(fields: [userID], references: [id])
 }
 
 model Logs {

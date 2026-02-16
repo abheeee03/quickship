@@ -1,7 +1,7 @@
 {
   "name": "@repo/db",
   "exports": {
-    "./client.ts": "./client.ts"
+    "./client": "./client.ts"
   },
   "version": "1.0.0",
   "description": "",
